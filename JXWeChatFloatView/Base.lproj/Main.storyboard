@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pDK-nP-dT0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wbC-Dj-P78">
+            <objects>
+                <viewController id="dVh-3t-kx7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ayg-P7-YQT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QOc-rx-kug"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iN0-zp-XGJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iDG-EB-9YD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="1002.5487256371815"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="Sac-Wn-fka">
+            <objects>
+                <navigationController id="9g8-8f-eLl" customClass="BaseNavigationViewController" customModule="JXWeChatFloatView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" id="s1s-uM-LLN"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7fO-dp-dju">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WgI-M1-Bf8" kind="relationship" relationship="rootViewController" id="I3w-Ee-KQj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EOd-xE-BXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="1766"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9KZ-AW-ZYM">
+            <objects>
+                <viewController id="WgI-M1-Bf8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ogf-6f-gvF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uwZ-ep-xpL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A0w-C9-QcP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nR0-fI-GTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2127" y="1786"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IJz-a0-73a">
+            <objects>
+                <viewController id="YAc-1q-JrR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CpW-rp-ivC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CgW-U0-6gu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uju-73-FUs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AP-ov-d4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2137" y="2506"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tmk-ta-nTT">
+            <objects>
+                <viewController id="dL9-jz-UQc" customClass="ViewController" customModule="JXWeChatFloatView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W50-T2-mTW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtA-Rn-RkC">
+                                <rect key="frame" x="143" y="314" width="88" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="点击push"/>
+                                <connections>
+                                    <action selector="pushVC:" destination="dL9-jz-UQc" eventType="touchUpInside" id="ygh-OV-iYy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VtA-Rn-RkC" firstAttribute="centerY" secondItem="W50-T2-mTW" secondAttribute="centerY" id="0Sd-WJ-m90"/>
+                            <constraint firstItem="VtA-Rn-RkC" firstAttribute="centerX" secondItem="W50-T2-mTW" secondAttribute="centerX" id="lvv-dV-Uo5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NuM-lu-9B7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="o54-AN-V5O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwY-ew-dH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="337.78110944527737"/>
+        </scene>
+        <!--Article Float Tab Bar Controller-->
+        <scene sceneID="qzo-24-hJg">
+            <objects>
+                <tabBarController id="pDK-nP-dT0" customClass="JXArticleFloatTabBarController" customModule="JXWeChatFloatView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lR3-Ij-aHA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZHU-pk-lhi" kind="relationship" relationship="viewControllers" id="Thl-PW-3Pn"/>
+                        <segue destination="HMp-aT-IbK" kind="relationship" relationship="viewControllers" id="soR-zH-JYM"/>
+                        <segue destination="9g8-8f-eLl" kind="relationship" relationship="viewControllers" id="WCu-5q-y7j"/>
+                        <segue destination="VzQ-5s-RMv" kind="relationship" relationship="viewControllers" id="BDr-Og-DWB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daf-bC-kPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="208" y="672"/>
+        </scene>
+        <!--微信-->
+        <scene sceneID="Olw-r1-AIp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZHU-pk-lhi" customClass="BaseNavigationViewController" customModule="JXWeChatFloatView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="微信" id="EY8-1Y-ard"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8YF-44-h4x">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dL9-jz-UQc" kind="relationship" relationship="rootViewController" id="BdG-ey-rsu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rxR-AE-5Qe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160.8" y="337.78110944527737"/>
+        </scene>
+        <!--通讯录-->
+        <scene sceneID="HjM-2O-vxJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HMp-aT-IbK" customClass="BaseNavigationViewController" customModule="JXWeChatFloatView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="通讯录" id="yrt-oY-Y7S"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gD0-Sf-MKO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dVh-3t-kx7" kind="relationship" relationship="rootViewController" id="OeC-F5-D7i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g82-6K-m4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160.8" y="1002.5487256371815"/>
+        </scene>
+        <!--我-->
+        <scene sceneID="sWH-qA-htA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VzQ-5s-RMv" customClass="BaseNavigationViewController" customModule="JXWeChatFloatView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我" id="Yd8-Sr-xw0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Sk-M2-VRW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YAc-1q-JrR" kind="relationship" relationship="rootViewController" id="Qe2-2X-eAk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzH-ax-Wwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="2506"/>
+        </scene>
+    </scenes>
+</document>
